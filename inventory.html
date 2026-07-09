@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <base href="./" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Stock Inventory — SmartStock (Demo)</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="index.html">SmartStock</a>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a class="active" href="inventory.html">Stock Inventory</a>
+          <a href="about.html">About</a>
+        </nav>
+        <button id="menuToggle2" class="menu-toggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <h1>Stock Inventory</h1>
+      <p>Example interactive inventory. Click "View" to open details for an item.</p>
+
+      <table class="stock-table" aria-label="Stock inventory table">
+        <thead>
+          <tr><th>ID</th><th>Item</th><th>In Stock</th><th>Price</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Widget Alpha</td>
+            <td>120</td>
+            <td>$9.99</td>
+            <td><a class="btn" href="item.html?id=1">View</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Gadget Beta</td>
+            <td>58</td>
+            <td>$19.50</td>
+            <td><a class="btn" href="item.html?id=2">View</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Tool Gamma</td>
+            <td>0</td>
+            <td>$5.75</td>
+            <td><a class="btn" href="item.html?id=3">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="index.html" class="link-inline">← Back to home</a></p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© Demo — SmartStock</div>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

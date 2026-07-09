@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <base href="./" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Item Details — SmartStock (Demo)</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="index.html">SmartStock</a>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="inventory.html">Stock Inventory</a>
+          <a href="about.html">About</a>
+        </nav>
+        <button id="menuToggle3" class="menu-toggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <a href="inventory.html" class="link-inline">← Back to inventory</a>
+      <h1 id="itemTitle">Item Details</h1>
+
+      <div id="itemCard" class="item-card">
+        <p><strong>ID:</strong> <span id="itemId">—</span></p>
+        <p><strong>Name:</strong> <span id="itemName">—</span></p>
+        <p><strong>In Stock:</strong> <span id="itemStock">—</span></p>
+        <p><strong>Price:</strong> <span id="itemPrice">—</span></p>
+        <p><strong>Description:</strong></p>
+        <p id="itemDesc">—</p>
+
+        <div class="item-actions">
+          <button class="btn" id="reserveBtn">Reserve</button>
+          <a class="btn ghost" href="inventory.html">Close</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© Demo — SmartStock</div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

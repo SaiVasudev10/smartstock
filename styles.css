@@ -1,0 +1,41 @@
+:root{
+  --brand:#0076be;
+  --bg:#0f1720;
+  --muted:#c0c4c8;
+  --card:#0b1220;
+  --accent:#0076be;
+  --btn-bg:#0076be;
+  --btn-color:#ffffff;
+  --gap:16px;
+  --radius:8px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:#071021;color:var(--muted)}
+a{color:var(--accent);text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:20px}
+.site-header{background:linear-gradient(90deg,var(--brand),#005ea4);color:#fff}
+.site-header .container{display:flex;align-items:center;gap:12px;padding:12px 20px}
+.brand{font-weight:700;font-size:18px;color:#fff}
+.main-nav{margin-left:20px;display:flex;gap:10px}
+.main-nav a{color:rgba(255,255,255,0.95);padding:6px 8px;border-radius:6px}
+.main-nav a.active{background:rgba(255,255,255,0.08)}
+.menu-toggle{margin-left:auto;background:transparent;border:0;color:#fff;font-size:20px;display:none}
+@media (max-width:700px){.main-nav{display:none}.menu-toggle{display:block}}
+
+.main-content{padding:28px 0}
+.cards{display:flex;gap:16px;flex-wrap:wrap}
+.card{background:rgba(255,255,255,0.03);padding:18px;border-radius:8px;flex:1;min-width:240px}
+.btn{display:inline-block;background:var(--btn-bg);color:var(--btn-color);padding:8px 12px;border-radius:6px;text-decoration:none}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+.link-inline{color:var(--muted)}
+
+.stock-table{width:100%;border-collapse:collapse;margin-top:12px;background:rgba(255,255,255,0.02);border-radius:6px;overflow:hidden}
+.stock-table th, .stock-table td{padding:10px 12px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.03)}
+.stock-table thead{background:rgba(255,255,255,0.03)}
+.stock-table tbody tr:hover{background:rgba(255,255,255,0.01)}
+
+.site-footer{padding:12px 0;margin-top:28px;color:rgba(255,255,255,0.5)}
+.item-card{background:rgba(255,255,255,0.02);padding:16px;border-radius:8px;margin-top:12px}
+.item-actions{margin-top:12px;display:flex;gap:8px}
